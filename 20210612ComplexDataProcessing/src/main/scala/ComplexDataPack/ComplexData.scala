@@ -52,6 +52,10 @@ object ComplexData {
     
     toJson.printSchema();
     
+    println("=========== JSON to COLUMNS 1 ==========");
+    val toJson1 = fromJson.select(to_json(struct(col("*"))).alias("Column"));
+    toJson1.show(false);
+    toJson1.printSchema();
   }
   
 }
