@@ -30,6 +30,7 @@ object SchemaReadCsv {
     import spark.implicits._;
     
     val df = spark.read.schema(schema_struct).format("csv").load("file:///E:/Hadoop/Hadoop_Data/txns");
+    //val df = spark.read.format("csv").load("file:///E:/Hadoop/Hadoop_Data/txns");
     
     df.show();
     

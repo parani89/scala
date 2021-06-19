@@ -35,11 +35,12 @@ object SimpleDSLSelect {
 					txnDf.show();
 					txnDf.printSchema();
 
-					print("===== Select columns =====");
+					println("===== Select columns =====");
 
 					//val selRow = txnDf.select("_c0", "_c1", "_c2");
-					val selRow = txnDf.select("txnno", "txndate", "custno","category");
-
+					//val selRow = txnDf.select("txnno", "txndate", "custno","category");
+					val selRow = txnDf.select(col("txnno"), col("txndate"), col("custno"),col("category"));
+					
 					selRow.show();
 					
 					println("======= Before write filtered data to File =======");

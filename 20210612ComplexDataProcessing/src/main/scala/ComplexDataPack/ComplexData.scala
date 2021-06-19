@@ -46,13 +46,13 @@ object ComplexData {
     
     println;
     
-    println("=========== JSON to COLUMNS ==========");
+    println("=========== COLUMNS to JSON ==========");
     val toJson = fromJson.select(to_json(struct($"device_id", $"device_name",$"humidity",$"lat",$"long",$"scale",$"temp",$"timestamp",$"zipcode"))).alias("JSON");
     toJson.show(false);
     
     toJson.printSchema();
     
-    println("=========== JSON to COLUMNS 1 ==========");
+    println("=========== COLUMNS to JSON  1 ==========");
     val toJson1 = fromJson.select(to_json(struct(col("*"))).alias("Column"));
     toJson1.show(false);
     toJson1.printSchema();

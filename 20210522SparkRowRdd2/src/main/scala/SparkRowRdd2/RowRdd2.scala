@@ -13,7 +13,7 @@ object RowRdd2 {
     
     val allData = sc.textFile("file:///E:Hadoop/Hadoop_Data/txns");
     
-    print("== Data Loaded ==");
+    println("== Data Loaded ==");
     
     val mapSplit = allData.map(x=>x.split(","));
     
@@ -21,10 +21,15 @@ object RowRdd2 {
     
     mapSplit.take(10).foreach(println);
     
+    println("====== Selected Column alone =====");
+    val selRdd = mapSplit.map(x=>x(0));
+    selRdd.take(10).foreach(println);
+    
     val rddValue = mapSplit.map(x=>(x(0),1,"Hi"));
     
-    print("==== Final Value ===");
+    println("==== Final Value ===");
     println;
     rddValue.take(10).foreach(println);
+    
   }
 }

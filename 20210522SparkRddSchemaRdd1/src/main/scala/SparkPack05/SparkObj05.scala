@@ -19,6 +19,8 @@ object SparkObj05 {
 			
 			print("== All Data loaded to RDD == ");
 			
+			allData.take(10).foreach(println);
+			
 			println;
 			val mapSplit = allData.map(x=>x.split(","));
 			

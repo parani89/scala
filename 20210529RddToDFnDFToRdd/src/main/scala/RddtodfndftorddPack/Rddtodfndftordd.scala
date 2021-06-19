@@ -73,7 +73,7 @@ def main(args:Array[String]):Unit ={
 		schemaDF.show();
 		
 		println;
-		print("=== Converting DF to RDD ====");
+		println("=== Converting DF to RDD ====");
 		
 		val rdd2 = schemaDF.rdd.map(x=>x.mkString(","));
 		
@@ -81,6 +81,10 @@ def main(args:Array[String]):Unit ={
 		print("=====Printing RDD from Schema DF converted DF======");
 		println;
 		rdd2.take(10).foreach(println);
+		
+		println("========== RDD -> ROW RDD ===========");
+		val rdd3 = schemaDF.rdd;
+		
 
 	}
 }

@@ -3,7 +3,10 @@ package SparkRowRddPack;
 import org.apache.spark.SparkConf;
 import org.apache.spark.SparkContext;
 import org.apache.spark.sql.Row;
-import org.apache.spark.sql.types._;
+import org.apache.spark.sql.types.StructType;
+import org.apache.spark.sql.types.StructField;
+import org.apache.spark.sql.types.IntegerType;
+import org.apache.spark.sql.types.StringType;
 import org.apache.spark.sql.SparkSession;
 
 object ScalaObject {
