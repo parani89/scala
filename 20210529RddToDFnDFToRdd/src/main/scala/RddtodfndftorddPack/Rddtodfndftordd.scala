@@ -52,7 +52,7 @@ def main(args:Array[String]):Unit ={
 
 		rowDF.show();
 
-		val mapStr = rowDF.rdd.map(x=>x.mkString(","));
+    val mapStr = rowDF.rdd.map(x => x.mkString(","));
 
 		println;
 		print("=====Printing RDD from Row DF converted DF======");

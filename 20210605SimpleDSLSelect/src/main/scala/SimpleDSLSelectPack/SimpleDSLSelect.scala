@@ -52,5 +52,9 @@ object SimpleDSLSelect {
 					println("======= After write filtered data to File =======");
 					
 					filterGym.show();
+					
+					println("=========== Single command write ===========");
+					val finalDf = txnDf.filter(col("category") === "Gymnastics").select(col("txnno"), col("txndate"), col("custno"), col("category"));
+					finalDf.show();
 	}
 }

@@ -25,7 +25,7 @@ object RowRdd2 {
     val selRdd = mapSplit.map(x=>x(0));
     selRdd.take(10).foreach(println);
     
-    val rddValue = mapSplit.map(x=>(x(0),1,"Hi"));
+    val rddValue = mapSplit.map(x=>("Hello ",x(0),1,"Hi"));
     
     println("==== Final Value ===");
     println;

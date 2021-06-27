@@ -17,6 +17,7 @@ object ReadFormatFiles {
 			val spark = SparkSession.builder().getOrCreate();
 			import spark.implicits._;
 
+			// Header = true means first row will be header
 			val dfcsv = spark.read.option("header","true").format("csv").load("E:/Hadoop/Hadoop_Data/Format_files/usdata.csv");
 
 			print("===== CSV READ =====");
