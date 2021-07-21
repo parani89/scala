@@ -26,15 +26,15 @@ object JoinAllSets {
     df2.show();
     
     println("============ Inner Join ============");
-    val innerJoin = df1.join(df2, Seq("txnno"), "inner").drop("txn_number");
+    val innerJoin = df1.join(df2, Seq("txnno"), "inner");
     innerJoin.show();
     
     println("============ Left Join ============");
-    val leftJoin = df1.join(df2, Seq("txnno"), "left").drop("txn_number");
+    val leftJoin = df1.join(df2, Seq("txnno"), "left");
     leftJoin.show();
     
     println("============ Right Join ============");
-    val rightJoin = df1.join(df2, Seq("txnno"), "right").drop("txnno");
+    val rightJoin = df1.join(df2, Seq("txnno"), "right");
     rightJoin.show();
     
     println("============ Outer Join ============");

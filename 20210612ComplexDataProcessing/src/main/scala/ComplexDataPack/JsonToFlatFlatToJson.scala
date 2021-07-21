@@ -17,7 +17,7 @@ object JsonToFlatFlatToJson {
     import spark.implicits._;
     
     println("========= Regular Json Read ===========");
-    val jsonDf = spark.read.format("json").option("multiLine","true").load("file:///E:/Hadoop/Hadoop_Data/picture.json");
+    val jsonDf = spark.read.format("json").load("file:///E:/Hadoop/Hadoop_Data/picture.json");
     
     jsonDf.show();
     jsonDf.printSchema();
