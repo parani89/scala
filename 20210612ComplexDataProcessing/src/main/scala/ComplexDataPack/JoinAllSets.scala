@@ -21,6 +21,7 @@ object JoinAllSets {
     val df1 = spark.read.format("csv").option("header","true").load("file:///E:/Hadoop/Hadoop_Data/j3.csv");
     df1.show();
     
+    
     println("============ DF 2 ============");
     val df2 = spark.read.format("csv").option("header","true").load("file:///E:/Hadoop/Hadoop_Data/j4.csv");
     df2.show();
@@ -28,6 +29,7 @@ object JoinAllSets {
     println("============ Inner Join ============");
     val innerJoin = df1.join(df2, Seq("txnno"), "inner");
     innerJoin.show();
+    innerJoin.explain();
     
     println("============ Left Join ============");
     val leftJoin = df1.join(df2, Seq("txnno"), "left");
@@ -49,7 +51,8 @@ object JoinAllSets {
     val outerJoin = df1.join(df2, Seq("txnno"), "outer");
     outerJoin.show();
     
-    
+    println("=========== CONF =============");
+    println(spark.conf.get("spark.sql.autoBroadcastJoinThreshold").toInt);
     
   }
 }

@@ -2,7 +2,7 @@ package LearningPack;
 
 object forLoop {
 
-	def main(args: Array[String]) {
+	def main(args: Array[String]): Unit = {
 		// Local variable declaration:
 
 	  println("====== For Loops ======");
