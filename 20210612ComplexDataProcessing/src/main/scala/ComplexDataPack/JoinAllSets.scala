@@ -33,6 +33,14 @@ object JoinAllSets {
     val leftJoin = df1.join(df2, Seq("txnno"), "left");
     leftJoin.show();
     
+    println("============ Left Semi Join ============");
+    val leftSemiJoin = df1.join(df2, Seq("txnno"), "leftsemi");
+    leftSemiJoin.show();
+    
+    println("============ LeftAnti Join ============");
+    val leftAntiJoin = df1.join(df2, Seq("txnno"), "leftanti");
+    leftAntiJoin.show();
+    
     println("============ Right Join ============");
     val rightJoin = df1.join(df2, Seq("txnno"), "right");
     rightJoin.show();
@@ -40,5 +48,8 @@ object JoinAllSets {
     println("============ Outer Join ============");
     val outerJoin = df1.join(df2, Seq("txnno"), "outer");
     outerJoin.show();
+    
+    
+    
   }
 }
