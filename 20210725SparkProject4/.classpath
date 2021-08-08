@@ -267,5 +267,10 @@
 	<classpathentry kind="lib" path="E:/Hadoop/Extra Jars/hbasejars/hbasejars/hbase-protocol-1.1.2.2.6.2.0-205.jar"/>
 	<classpathentry kind="lib" path="E:/Hadoop/Extra Jars/hbasejars/hbasejars/hbase-server-1.1.2.2.6.2.0-205.jar"/>
 	<classpathentry kind="lib" path="E:/Hadoop/Extra Jars/hbasejars/hbasejars/shc-core-1.1.1-2.1-s_2.11.jar"/>
+	<classpathentry kind="lib" path="E:/Hadoop/Extra_Jars/hbasejars/hbasejars/hbase-client-1.1.2.2.6.2.0-205.jar"/>
+	<classpathentry kind="lib" path="E:/Hadoop/Extra_Jars/hbasejars/hbasejars/hbase-common-1.1.2.2.6.2.0-205.jar"/>
+	<classpathentry kind="lib" path="E:/Hadoop/Extra_Jars/hbasejars/hbasejars/hbase-protocol-1.1.2.2.6.2.0-205.jar"/>
+	<classpathentry kind="lib" path="E:/Hadoop/Extra_Jars/hbasejars/hbasejars/hbase-server-1.1.2.2.6.2.0-205.jar"/>
+	<classpathentry kind="lib" path="E:/Hadoop/Extra_Jars/hbasejars/hbasejars/shc-core-1.1.1-2.1-s_2.11.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
