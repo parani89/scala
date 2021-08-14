@@ -129,7 +129,7 @@ object SparkPhase1 {
 			                                                                count("id").alias("id_count"),
 			                                                                count("ip").alias("ip_count")
 			                                                          ).alias("count")
-			                                                        );
+			                                                        )
 			nonMatchedComplexDf.show();
 			nonMatchedComplexDf.printSchema();
 			println(nonMatchedComplexDf.count());
