@@ -18,7 +18,7 @@ object Exercise01 {
     //val allData = sc.textFile("hdfs://E:/Hadoop/Hadoop_Data/usdata.csv");
     
     allData.take(10).foreach(println);
-    
+   
     
   }
   
