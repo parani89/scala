@@ -1,0 +1,41 @@
+{
+	"first_name": "zeyobron",
+	"second_name": "analytics",
+	"address": {
+		"temporary_address": "Chennai",
+		"Permanent_address": "Hyderabad"
+	},
+	"Students": [{
+			"user": {
+				"gender": "male",
+				"name": {
+					"title": "mr",
+					"first": "nicolas",
+					"last": "liu"
+				},
+				"address": {
+					"temporary_address": "Vizag",
+					"Permanent_address": "Bangalore"
+				},
+				"components": ["pen", "pencil"]
+
+			}
+		},
+		{
+			"user": {
+				"gender": "male",
+				"name": {
+					"title": "mr",
+					"first": "tristan",
+					"last": "smith"
+				},
+				"address": {
+					"temporary_address": "Vizag",
+					"Permanent_address": "Banagalore"
+				},
+				"components": ["book", "paper"]
+			}
+		}
+	]
+
+}
